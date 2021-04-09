@@ -58,7 +58,7 @@ class Auth {
 	var authProperties: SMARTAuthProperties?
 	
 	/// Context used during authorization to pass OS-specific information, handled in the extensions.
-	var authContext: AnyObject?
+	public var authContext: AnyObject?
 	
 	/// The closure to call when authorization finishes.
 	var authCallback: ((_ parameters: OAuth2JSON?, _ error: Error?) -> ())?
